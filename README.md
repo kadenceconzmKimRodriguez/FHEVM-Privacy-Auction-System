@@ -19,7 +19,7 @@ A stunning, privacy-preserving NFT auction system using Zama's Fully Homomorphic
 ## 🏗️ Project Structure
 
 ```
-zama2/
+zama/
 ├── example/                    # Smart contracts
 │   ├── contracts/
 │   │   ├── FHE.sol            # FHE library
