@@ -1,0 +1,26 @@
+{
+  "name": "fhevm-privacy-auction",
+  "version": "1.0.0",
+  "description": "Privacy-preserving NFT auction system using Zama FHEVM technology",
+  "main": "index.js",
+  "scripts": {
+    "compile": "cd example && npm run build",
+    "deploy:auction": "cd example && npm run deploy:auction",
+    "deploy:nft": "cd example && npm run deploy:nft",
+    "addresses": "cd example && npm run addresses",
+    "verify:all": "cd example && npm run verify:all",
+    "frontend:install": "cd frontend && npm install",
+    "frontend:start": "cd frontend && npm start",
+    "frontend:build": "cd frontend && npm run build"
+  },
+  "keywords": ["fhevm", "zama", "auction", "nft", "privacy", "blockchain", "fhe", "sealed-bid"],
+  "author": "Zama Developer Program Participant",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.0"
+  },
+  "dependencies": {
+    "ethers": "^6.8.0"
+  }
+}

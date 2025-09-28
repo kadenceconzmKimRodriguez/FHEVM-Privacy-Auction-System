@@ -1,0 +1,29 @@
+{
+  "name": "fhevm-privacy-auction-example",
+  "version": "1.0.0",
+  "description": "FHEVM Privacy Auction Example Contracts",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "build": "hardhat compile",
+    "deploy:nft": "hardhat run scripts/deploy-nft.js --network sepolia",
+    "deploy:auction": "hardhat run scripts/deploy-auction.js --network sepolia",
+    "redeploy:nft": "hardhat run scripts/redeploy-nft.js --network sepolia",
+    "addresses": "node scripts/update-addresses.js",
+    "verify:all": "hardhat verify --network sepolia",
+    "clean": "hardhat clean"
+  },
+  "keywords": ["fhevm", "zama", "auction", "nft", "privacy", "blockchain", "fhe", "sealed-bid"],
+  "author": "Zama Developer Program Participant",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.0",
+    "dotenv": "^16.3.1"
+  },
+  "dependencies": {
+    "@fhevm/solidity": "^0.8.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "ethers": "^6.8.0"
+  }
+}
